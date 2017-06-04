@@ -1,0 +1,44 @@
+ <% include ../partials/header %>
+<div class="container-fluid">
+ <hr>
+    <div class="row-fluid">
+ <div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+          <h5>Tambah Materi</h5>
+        </div>
+            
+        <div class="widget-content nopadding">
+          <form action="/dashboard/artikel/add" method="post" enctype="multipart/form-data" class="form-horizontal">
+
+            <div class="control-group">
+              <label for="checkboxes" class="control-label">Judul Artikel</label>
+              <div class="controls">
+                <input type="text" class="form-control" name="title">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Foto artikel</label>
+              <div class="controls">
+                <input type="file" name="image" />
+              </div>
+            </div>
+     
+                    <div class="control-group">
+
+                        <div class="controls">
+                          <textarea class="textarea_editor span12" name="body" rows="6" placeholder="Enter text ..."></textarea>
+                        </div>
+                      
+                </div>
+              </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-success">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+  </div>
+
+ <% include ../partials/footer %>
