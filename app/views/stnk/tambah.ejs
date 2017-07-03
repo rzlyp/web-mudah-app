@@ -1,0 +1,96 @@
+ <% include ../partials/header %>
+<div class="container-fluid">
+ <hr>
+    <div class="row-fluid">
+ <div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+          <h5>Tambah Data STNK</h5>
+        </div>
+            
+        <div class="widget-content nopadding">
+          <form action="/dashboard/stnk/add" method="post" class="form-horizontal">
+
+            <div class="control-group">
+              <label for="checkboxes" class="control-label">Nomor Motor/Plat</label>
+              <div class="controls">
+                <input type="text" class="form-control" name="nomor_motor">
+              </div>
+            </div>
+             <div class="control-group">
+              <label for="checkboxes" class="control-label">Nama Pemilik</label>
+              <div class="controls">
+                <input type="text" class="form-control" name="nama_pemilik">
+              </div>
+            </div>
+             <div class="control-group">
+              <label for="checkboxes" class="control-label">Alamat</label>
+              <div class="controls">
+                <textarea class="form-control" name="alamat"></textarea>
+              </div>
+            </div>
+             <div class="control-group">
+              <label for="checkboxes" class="control-label">Merk Motor</label>
+              <div class="controls">
+                <input type="text" class="form-control" name="merk">
+              </div>
+            </div>
+             <div class="control-group">
+              <label for="checkboxes" class="control-label">Type Motor</label>
+              <div class="controls">
+                <input type="text" class="form-control" name="type">
+              </div>
+            </div>
+             <div class="control-group">
+              <label for="checkboxes" class="control-label">Jenis Motor</label>
+              <div class="controls">
+                <input type="text" class="form-control" name="jenis">
+              </div>
+            </div>
+             <div class="control-group">
+              <label for="checkboxes" class="control-label">Model Motor</label>
+              <div class="controls">
+                <input type="text" class="form-control" name="model">
+              </div>
+            </div>
+             <div class="control-group">
+              <label for="checkboxes" class="control-label">Tahun Pembuatan</label>
+              <div class="controls">
+                <input type="text" class="form-control" name="tahun_pembuatan">
+              </div>
+            </div>
+            <div class="control-group">
+              <label for="checkboxes" class="control-label">Warna Motor</label>
+              <div class="controls">
+                <input type="text" class="form-control" name="warna">
+              </div>
+            </div>
+             <div class="control-group">
+              <label for="checkboxes" class="control-label">Bahan Bakar</label>
+              <div class="controls">
+                <input type="text" class="form-control" name="bahan_bakar">
+              </div>
+            </div>
+             <div class="control-group">
+              <label for="checkboxes" class="control-label">Warna Tnkb</label>
+              <div class="controls">
+                <input type="text" class="form-control" name="warna_tnkb">
+              </div>
+            </div>
+             <div class="control-group">
+              <label for="checkboxes" class="control-label">Nomor BPKB</label>
+              <div class="controls">
+                <input type="text" class="form-control" name="no_bpkb">
+              </div>
+            </div>
+        </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-success">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+  </div>
+
+ <% include ../partials/footer %>

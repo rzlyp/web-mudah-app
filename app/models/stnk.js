@@ -9,13 +9,12 @@ const stnkSchema = new mongoose.Schema({
 	jenis : String,
 	model : String,
 	tahun_pembuatan : String,
-	isi_silinder : String,
 	warna : String,
 	bahan_bakar : String,
 	warna_tnkb : String,
 	no_bpkb : String
 });
 
-const stnk = mongoose.model("Stnk", stnkSchema);
+const stnk = mongoose.model("stnk", stnkSchema);
 
 module.exports = stnk;
